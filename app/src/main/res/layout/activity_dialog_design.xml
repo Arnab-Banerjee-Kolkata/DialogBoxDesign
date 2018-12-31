@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogDesign">
+
+    <RelativeLayout
+        android:id="@+id/fadedBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7fffffff"
+        android:layout_margin="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_bg"
+        android:elevation="20dp">
+
+        <android.arnab.customdialog.DrawCircles
+            android:id="@+id/circlesRegion"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+
+
+        <EditText
+            android:id="@+id/ev"
+            android:layout_width="252dp"
+            android:layout_height="188dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="top"
+            android:layout_marginBottom="93dp"
+            android:height="10dp"
+            android:elevation="5dp"
+            android:background="@drawable/msg_rect"
+            android:hint="What are you up to?"
+            android:padding="10dp"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ev"
+            android:layout_alignRight="@+id/ev"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/card_bg"
+            android:elevation="7dp"
+            android:text="SEND" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/card_bg"
+            android:elevation="7dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_alignTop="@+id/button2"
+            android:background="@drawable/card_bg"
+            android:elevation="7dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/emoji" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/balloonLayout"
+        android:layout_width="100dp"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/white_balloon"
+        android:elevation="27dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/white"
+            android:src="@drawable/prof" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
